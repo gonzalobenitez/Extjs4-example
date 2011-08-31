@@ -1,6 +1,9 @@
 Ext.application({
     name: 'Example',
     appFolder: 'app',
+    controllers: [
+        'Grid', 'Form', 
+    ],
     launch: function() {
     	Ext.create('Ext.container.Viewport', {
             layout: 'fit',
@@ -8,7 +11,15 @@ Ext.application({
                 {
                     xtype: 'panel',
                     title: 'Panel Example',
-                    html : 'Grid will go here'
+                    xtype: 'tabpanel',
+                    items: [{
+                        title: 'Grid',
+                        html: "My content was added during construction."
+                    }, {
+                        title: 'Form',
+                        html: "My  was added during construction."
+                    }, 
+                    ]
                 }
             ]
         });
