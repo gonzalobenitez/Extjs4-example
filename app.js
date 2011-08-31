@@ -12,6 +12,5 @@ Ext.application({
                 }
             ]
         });
-         });
     }
 });
