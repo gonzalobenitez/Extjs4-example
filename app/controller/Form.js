@@ -1,5 +1,8 @@
 Ext.define('Example.controller.Form', {
 	extend: 'Ext.app.Controller',
+	views: [
+            'form.List'
+        ],
     init: function() {
         this.control({
             'viewport > panel': {

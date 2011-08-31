@@ -13,11 +13,11 @@ Ext.application({
                     title: 'Panel Example',
                     xtype: 'tabpanel',
                     items: [{
-                        title: 'Grid',
-                        html: "My content was added during construction."
-                    }, {
                         title: 'Form',
-                        html: "My  was added during construction."
+                        xtype: 'formlist'
+                    }, {
+                        title: 'Grid',
+                        xtype: 'gridlist'
                     }, 
                     ]
                 }
