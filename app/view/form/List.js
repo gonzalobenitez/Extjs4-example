@@ -113,10 +113,7 @@ Ext.define('Example.view.form.List', {
     	                                         },
     	                                         items : [
     	                                             {
-    	                                                 //the width of this field in the HBox layout is set directly
-    	                                                 //the other 2 items are given flex: 1, so will share the rest of the space
-    	                                                 width:          50,
-
+      	                                                 width:          50,
     	                                                 xtype:          'combo',
     	                                                 mode:           'local',
     	                                                 value:          'mrs',
